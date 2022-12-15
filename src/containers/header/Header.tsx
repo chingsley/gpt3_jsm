@@ -1,4 +1,3 @@
-import React from 'react'
 import './header.css';
 
 import people from '../../assets/people.png';
@@ -37,7 +36,7 @@ function Header() {
         <img src={ai} alt="ai" />
       </div>
     </div>
-  )
+  );
 }
 
 export default Header;
