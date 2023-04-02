@@ -1,5 +1,5 @@
 import React from 'react';
-import LazyLoadImg from '../lazyLoadImg/LazyLoadImg';
+import Img from '../img/Img';
 import './article.css';
 
 interface ArticleProps {
@@ -11,7 +11,7 @@ interface ArticleProps {
 const Article: React.FC<ArticleProps> = ({ imgUrl, date, text }) => (
   <div className='gpt3__blog-container_article'>
     <div className='gpt3__blog-container_article-image'>
-      <LazyLoadImg image={{ src: imgUrl, alt: 'blog_image' }} />
+      <Img src={imgUrl} alt='blog_image' />
     </div>
     <div className='gpt3__blog-container_article-content'>
       <div>
