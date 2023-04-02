@@ -1,12 +1,12 @@
 import React from 'react';
 import possibilityImage from '../../assets/possibility.png';
-import LazyLoadImg from '../../components/lazyLoadImg/LazyLoadImg';
+import { Img } from '../../components';
 import './possibility.css';
 
 const Possibility = () => (
   <div className='gpt3__possibility section__padding' id='possibility'>
     <div className='gpt3__possibility-image'>
-      <LazyLoadImg image={{ src: possibilityImage, alt: 'possibility' }} />
+      <Img src={possibilityImage} alt='possibility' />
     </div>
     <div className='gpt3__possibility-content'>
       <h4>Request Early Access to Get Started</h4>
